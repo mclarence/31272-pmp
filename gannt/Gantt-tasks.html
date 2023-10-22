@@ -1,0 +1,2220 @@
+<html xmlns:ganttproject="http://ganttproject.sf.net/">
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>GanttProject - Gantt</title>
+        <style>
+	    A:link {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: black;
+	    }
+	    A:visited {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: black; BACKGROUND: none
+	    }
+	    A:hover {
+		FONT-WEIGHT: bold;  TEXT-DECORATION: none;
+		FONT-SIZE: 14px ; COLOR: white ; BACKGROUND: #6d9ec6;
+	    }
+	    .notes {
+	      padding-left: 10px;
+	    }
+	    .notes pre {
+	      font-family: Arial, Helvetica;
+	      font-size: 10px;
+	      margin-top: 0px;
+	      padding-top: 0px;
+	      margin-bottom: 5px;
+	    }
+	    .attachment {
+	      padding-left: 10px;
+	    }
+	    .attachment a:link {
+	      font-weight: normal;
+	      font-size: 12px;
+	      color: #6d9ec6;
+	      background: white;
+	    }
+	    .attachment a:hover {
+	      font-weight: normal;
+	      text-decoration: underline;
+	      font-size: 12px;
+	      color: #6d9ec6;
+	      background: white;
+	    }
+	    .attachment a:visited {
+	      font-weight: normal;
+	      font-size: 12px;
+	      background: white;
+	      color: gray;
+	    }
+	    TD {
+		FONT-SIZE: 12px; COLOR: black; FONT-STYLE: normal; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    UL {
+		FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    LI {
+		FONT-SIZE: 12px; FONT-FAMILY: Arial, Helvetica, Geneva, sans-serif
+	    }
+	    H1 {
+		FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #6d9ec6;
+	    }
+	    H2 {
+		FONT-WEIGHT: bold; FONT-SIZE: 16pt; COLOR: #000000;
+	    }
+	    H3 {
+		FONT-WEIGHT: bold; FONT-SIZE: 13pt; COLOR: #6d9ec6;
+	    }
+	    H4 {
+		FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #000000;
+	    }
+	    H5 {
+		FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #6d9ec6;
+	    }
+	    H6 {
+		FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000
+	    }
+
+	    </style>
+    </head>
+    <body bgcolor="white">
+        <center>
+            <style>
+div.project_name {
+  font-size: 150%;
+  color: black;
+  font-weight: bold;
+  border-top: solid #6d9ec6 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+}
+div.page_links {
+  background: #6d9ec6;
+  text-align: center;
+}
+</style>
+            <center>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td bgcolor="#dddddd">
+                            <div class="project_name">Visitor Management System Project</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="page_links">
+                                <a href="Gantt.html"></a>  |
+          <a href="Gantt-chart.html">Gantt</a> |
+          <a href="Gantt-tasks.html">Tasks</a> |
+          <a href="Gantt-resources.html">Resources</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+            <br>
+            <style>
+td.header {
+  background: #dddddd;
+  margin: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom:1px;
+  border-bottom: solid black 2px;
+}
+td.cell {
+  margin: 0;
+  margin-top: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 2px;
+  padding-bottom:1px;
+}
+div.cell {
+}
+h5.header {
+  margin-left: 2px;
+  margin-top: 2px;
+}
+</style>
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top" class="header">
+                        <h5 class="header">Name</h5>
+                    </td><td valign="top" class="header">
+                        <h5 class="header">Begin date</h5>
+                    </td><td valign="top" class="header">
+                        <h5 class="header">End date</h5>
+                    </td><td valign="top" class="header">
+                        <h5 class="header">Resources</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1. Visitor Management System (VMS)</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">7/8/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/5/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.1. VMS Data Storage System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">7/8/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/9/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.1.1. Create database</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">7/8/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/8/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.1.2. Expose interfaces (i.e API) for other systems to interact with the database.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">14/8/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/9/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.1.3. Implement data backup procedures.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">4/9/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">22/9/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.1.4. Implement database high availability.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">4/9/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">22/9/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.1.5. Secure database.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">25/9/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/9/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.2. SMR Staff Account Management System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">2/10/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.2.1. Develop a backend system to allow user creation, modification and deletion.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">2/10/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/10/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.2.2. Create a webpage to allow SMR administrators to create new employee accounts to access the other VMS systems.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/10/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.2.3. Test the account management system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5. Patron Account Management System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">26/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.1. Develop the patron sign in and sign up system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.2. Develop an account balance system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.3. Develop account detail update system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.4. Develop a discount/offer system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.5. Develop an event notification system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/11/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.6. Create a webpage for patrons to sign-up and sign into their accounts.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.7. Create an account overview dashboard that shows account information (i.e balances, details) and is able to update said information.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/12/23</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.8. Integrate with kiosk terminals.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.5.9. Test the patron account management system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">22/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">26/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3. On-Snow Accommodation &amp; Equipment Hire System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">15/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.1. Develop the accommodation booking backend system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.2. Develop the (ski) equipment booking backend system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.3. Develop the transportation booking backend system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.4. Develop the lift pass purchasing backend system.Create a webpage for customers to book accommodation.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.5. Create a webpage for customers to book accommodation.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.6. Create a webpage for customers to book (ski) equipment.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.7. Create a webpage for customers to book transportation.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.8. Create a webpage for customers to purchase lift passes.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.3.9. Test the accommodation and equipment hire system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">15/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.4. On-Snow Services/Activities Reservation System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">15/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.4.1. Develop the ski lesson booking backend system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.4.2. Create a frontend UI for ski instructors to view their assigned lessons.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.4.3. Create a frontend UI for customers to book ski lessons.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.4.4. Test the services/activities reservation system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">15/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.6. Patron Companion Mobile App</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.6.1. Develop a mobile application for patrons to manage their account, receive notifications and view current offers.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.6.2. Test the mobile application.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.7. Merchandising System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">5/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.7.1. Develop the payment system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.7.2. Interface with patron account management system to update balances.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.7.3. Develop a store management system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.7.4. Create a webpage to allow users to select items to purchase.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.7.5. Test the merchandising system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">5/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8. Event Management System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">5/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.1. Develop an event scheduling system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.2. Implement a prize tracking system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.3. Implement participant registration.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.4. Implement a result storage system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.5. Implement a ranking system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.6. Create a webpage to allow VMS staff to schedule new events.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.7. Create a webpage to allow participants to view their scheduled events, rank and results.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.8. Create a webpage to allow VMS staff to view currently active and upcoming events.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.8.9. Test the event management system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">5/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.9. Sponsor Management System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.9.1. Develop sponsor registration system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.9.2. Develop sponsor tracking system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.9.3. Develop an advertising system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.9.4. Create a webpage to allow VMS staff to register new sponsors.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.9.5. Implement ability to allow VMS staff to see if a sponsor is allowed to access VIP areas.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.9.6. Test the sponsor management system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">4/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.12. Patron Feedback System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.12.1. Implement a backend system to store user and staff feedback.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/1/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.12.2. Create a webpage to allow staff to input their own feedback or feedback on a customer&rsquo;s behalf.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.12.3. Create a webpage to allow patrons to enter feedback.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.12.4. Create a webpage to allow SMR staff to view feedback.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.12.5. Test feedback system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">4/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/3/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11. RFID Card System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/6/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.1. Create a backend system to handle RFID card systems.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">26/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.2. Procure RFID cards for use with the system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.3. Implement the ability to allow VMS staff to assign RFID cards to patrons.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">30/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.4. Integrate RFID card system with payment system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">30/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.5. Integrate RFID card system with lift pass system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">30/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.6. Implement RFID card linking system to assist in locating whereabouts of linked patrons (i.e family).</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">30/4/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.7. Integrate RFID card system with kiosk terminals.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">14/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">27/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.8. Allow patrons via a webpage or mobile app to link RFID cards together.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">14/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">27/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.11.9. Test RFID card system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">28/5/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/6/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.10. Data Analytics System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/6/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">12/8/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.10.1. Create a data warehouse to store VMS data.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/6/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">24/6/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.10.2. Implement data backup procedures.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">25/6/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/7/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.10.3. Interface with the central data storage system to pull relevant data into the data warehouse.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">25/6/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/7/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.10.4. Create a webpage that allows VMS staff to view analytical data (i.e finances and customer demographics).</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">9/7/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/7/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.10.5. Create a webpage that allows VMS staff to generate reports.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">9/7/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">29/7/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.10.6. Test the data analytics system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">30/7/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">12/8/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14. Testing of VMS System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/8/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">12/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.1. Develop test data for inputs into test cases.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/8/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/8/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.2. Create a test environment.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/8/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/8/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.3. Perform integration testing on all components of the VMS system developed.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">21/8/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">3/9/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.4. Log defects/bugs that arise from testing.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">4/9/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/9/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.5. Inform relevant team members on defects to be fixed.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/9/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/9/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.6. Evaluate the performance of the VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">18/9/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">24/9/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.7. Conduct security penetration testing on the VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">25/9/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/10/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.8. Evaluate the security of the VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">9/10/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">15/10/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.9. Pilot the system with a small subset of users and gather user feedback. (Acceptance testing).</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/10/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">5/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.14.10. Evaluate user feedback.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">6/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">12/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13. Deployment of VMS System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">9/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.1. Create a local network for physical systems/peripherals to connect to (i.e kiosk terminals, RFID card readers).</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">26/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.2. Install kiosk terminals.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">27/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.3. Install RFID card readers on lift stations.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">27/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.4. Install RFID card readers on kiosk terminals.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">27/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.5. Integrate VMS/RFID payment system on on-snow businesses.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">27/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.6. Register a web domain for VMS system for customer facing web services.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/11/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.8. Procure servers (or cloud services) to host the system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.9. Setup servers for the VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">18/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">31/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.10. Implement server security measures.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">18/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">24/12/24</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.11. Compile source code into executable files.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">2/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.7. Publish VMS mobile application on the mobile app store.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">3/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">9/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.12. Install VMS system onto the server.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">3/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">3/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.13. Setup connection to central data storage system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">6/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">7/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.14. Setup kiosk connection to VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">6/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">7/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.15. Setup RFID card reader connection to VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">6/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">7/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.16. Start VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">8/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.13.17. Monitor for errors</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">9/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">9/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.16. Monitoring of VMS System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.16.1. Setup continuous monitoring on the VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.16.2. Setup alerts when a system goes offline.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.16.3. Setup performance monitoring.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.16.4. Setup intrusion detection.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.16.5. Setup hardware monitoring.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.16.6. Setup network monitoring.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.15. Staff Training on VMS System</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">21/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.15.1. Create training documentation for staff.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">21/1/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">3/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.15.2. Hire (or assign existing) staff to train other staff using the VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">4/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.15.3. Schedule a time/workshop for staff to be trained on the system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">11/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">12/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.15.4. Assess staff competency on the VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">19/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17. Finalisation/Closing</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/5/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.1. Conduct project review and evaluation.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">20/2/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">12/3/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.2. Audit of the entire system, ensuring regulatory and security compliance.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">13/3/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">26/3/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.3. Liaise with customers and stakeholders for acceptance of the VMS system.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">27/3/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">9/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.4. Write up a final report outlining the project&rsquo;s performance.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">10/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">16/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.5. Collate, store and/or archive project documentation.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.6. Finalise project finances.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.7. Close any contracts (if applicable).</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">17/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.8. Handover to other staff for ongoing maintenance and support.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">24/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">30/4/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.9. Communicate with relevant stakeholders on completion of the project.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1/5/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">21/5/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+                <tr>
+                    <td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:1em">
+                            <div style="margin: 0; padding: 0; text-align: ;">1.17.10. Celebrate the completion of the project.</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">22/5/25</div>
+                        </div>
+                    </td><td valign="top" class="cell">
+                        <div style="margin:0; padding:0; padding-left:0.5em">
+                            <div style="margin: 0; padding: 0; text-align: ;">23/5/25</div>
+                        </div>
+                    </td><td valign="top" class="cell"></td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td bgcolor="#6d9ec6" width="50%"><font color="#FFFFFF"><b>Ganttproject (3.3.3294)</b></font></td><td bgcolor="#6d9ec6" width="50%" align="right"><b><a href="http://ganttproject.biz">ganttproject.biz</a></b>
+                    <br>
+                    <b>22/10/23 - 3:26:23 pm</b></td>
+            </tr>
+        </table>
+    </body>
+</html>
